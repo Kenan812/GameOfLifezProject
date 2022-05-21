@@ -5,9 +5,16 @@
 #include <unistd.h>
 #include "game_library/includes/board.h"
 #include "game_library/includes/game_clipped.h"
+#include "draw_animation_library/includes/board_drawer.h"
+
+// Return 1 for clipped game
+// Return 2 for circular game
+int choose_game_type();
 
 
 int main() {
+    int game_type = choose_game_type();
+
     int point_alive = 13;
     int **pos = (int**)malloc(point_alive * sizeof(int*));
     if (pos == NULL){ printf("Memory allocation error"); return 1; }
@@ -30,10 +37,35 @@ int main() {
     pos[11][0] = 7; pos[11][1] = 5;
     pos[12][0] = 8; pos[12][1] = 5;
 
-
     BOARD* board = prepare_board(10, 10, pos, point_alive);
-    start_game(board);
+
+    // Clipped
+    if (game_type == 1) {
+        start_game_clipped(board);
+    } else if (game_type == 2) {
+        // start circular game
+    }
+
     free_board(board);
 
     return 0;
 }
+
+
+int choose_game_type() {
+    int type;
+    while(1) {
+        system("clear");
+        printf(RED); printf("\tChoose difficulty\n");
+        printf(WHITE); printf("1-Clipped\n2-Circular\n\n");
+        printf("Enter category: ");
+        type = getchar();
+        getchar();
+        // scanf("%c", &type);
+        if (type == 49 || type == 50) break;
+    }
+    printf(WHITE);
+    return type - 48;
+}
+
+

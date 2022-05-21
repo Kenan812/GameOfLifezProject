@@ -50,7 +50,7 @@ void perform_step(BOARD* board) {
 
 
 
-void start_game(BOARD* board) {
+void start_game_clipped(BOARD* board) {
     while(1) {
         system("clear");
         //print_board(board);

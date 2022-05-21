@@ -10,5 +10,6 @@
 #define RED "\x1b[1;31m"
 #define YELLOW "\x1b[1;33m"
 #define WHITE "\x1b[1;0m"
+#define BLUE "\x1b[1;34m"
 
 void draw_board(BOARD board);

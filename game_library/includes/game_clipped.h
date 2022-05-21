@@ -29,6 +29,6 @@ void perform_step(BOARD* board);
 // Starts game of life
 // Parameters: 
 //      rows: number of rows
-void start_game(BOARD* board);
+void start_game_clipped(BOARD* board);
 
 

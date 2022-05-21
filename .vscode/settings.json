@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "board.h": "c"
+        "board.h": "c",
+        "game_clipped.h": "c",
+        "board_drawer.h": "c"
     }
 }
