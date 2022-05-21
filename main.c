@@ -4,6 +4,7 @@
 #include <time.h>
 #include <unistd.h>
 #include "game_library/includes/board.h"
+#include "game_library/includes/game_clipped.h"
 
 
 #define RED_BOLD "\x1b[1;31m"
@@ -12,9 +13,7 @@
 // Size of board without borders
 #define BOARD_ROWS 10
 #define BOARD_COLS 10
- 
-// #define BOARD_ROWS 40
-// #define BOARD_COLS 40
+
 
 
 /*
@@ -139,20 +138,14 @@ void startGame(int** board, int rows, int cols) {
 }
 
 int main() {
-
-    BOARD* board = initialize_board(10, 10);
-    fill_board_borders(board);
-    // print_board(board);
-
-    int pointAlive = 13;
-    int **pos = (int**)malloc(pointAlive * sizeof(int*));
+    int point_alive = 13;
+    int **pos = (int**)malloc(point_alive * sizeof(int*));
     if (pos == NULL){ printf("Memory allocation error"); return 1; }
-    for (int i = 0; i < pointAlive; i++) {
+    for (int i = 0; i < point_alive; i++) {
         pos[i] = (int*)malloc(2 * sizeof(int));
         if (pos[i] == NULL) { printf("Memory allocation error"); return 1;}
     }
 
-    // input 1
     pos[0][0] = 5; pos[0][1] = 2;
     pos[1][0] = 5; pos[1][1] = 3;
     pos[2][0] = 5; pos[2][1] = 4;
@@ -167,10 +160,10 @@ int main() {
     pos[11][0] = 7; pos[11][1] = 5;
     pos[12][0] = 8; pos[12][1] = 5;
 
-    fill_board(board, pos, pointAlive);
-    print_board(board);
 
 
+    BOARD* board = prepare_board(10, 10, pos, point_alive);
+    start_game(board);
     free_board(board);
 
 
