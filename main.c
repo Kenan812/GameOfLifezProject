@@ -11,6 +11,9 @@
 #define BOARD_ROWS 10
 #define BOARD_COLS 10
  
+// #define BOARD_ROWS 40
+// #define BOARD_COLS 40
+
 
 /*
     Definition for board:
@@ -183,6 +186,7 @@ int main() {
 
 
     fillBoard(board, rows, cols, pos, pointAlive);
+    // printBoard(board, rows, cols);
 
     printf("\n\n\n");
     startGame(board, rows, cols);
