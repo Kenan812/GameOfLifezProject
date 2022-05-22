@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "board.h": "c",
+        "game_clipped.h": "c",
+        "board_drawer.h": "c",
+        "game_circular.h": "c"
+    }
+}
