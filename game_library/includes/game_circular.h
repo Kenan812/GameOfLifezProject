@@ -8,4 +8,28 @@
 #include "board.h"
 #include "../../draw_animation_library/includes/board_drawer.h"
 
+/* CIRCULAR VERSION OF THE GAME */
+
+
+// Prepare board for the game
+//      Initialize board, fill borders
+// Parameters: 
+//      rows: number of rows
+//      cols: number of cols
+// Return: pointer to created board
+BOARD* prepare_board_circular(int rows, int cols, int** pos, int points_alive);
+
+
+// Performs step of the game by modifying the board
+// Parameters: 
+//      rows: number of rows
+void perform_step_circular(BOARD* board);
+
+
+// Starts game of life
+// Parameters: 
+//      rows: number of rows
+void start_game_circular(BOARD* board);
+
+
 

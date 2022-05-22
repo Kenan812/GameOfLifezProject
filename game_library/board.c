@@ -51,7 +51,7 @@ void print_board(BOARD* board) {
 
 void fill_board(BOARD* board, int** pos, int points_alive){
     for (int i = 0; i < points_alive; i++) {
-        if (pos[i][0] > 1 && pos[i][0] < board->rows-1 && pos[i][1] > 1 && pos[i][1] < board->cols-1)
+        if (pos[i][0] > 0 && pos[i][0] < board->rows-1 && pos[i][1] > 0 && pos[i][1] < board->cols-1)
             board->board_content[pos[i][0]][pos[i][1]] = 1;
     }
 }
