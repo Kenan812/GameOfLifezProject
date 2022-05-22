@@ -5,6 +5,7 @@
 #include <unistd.h>
 #include "game_library/includes/board.h"
 #include "game_library/includes/game_clipped.h"
+#include "game_library/includes/game_circular.h"
 #include "draw_animation_library/includes/board_drawer.h"
 
 // Return 1 for clipped game
@@ -37,17 +38,34 @@ int main() {
     pos[11][0] = 7; pos[11][1] = 5;
     pos[12][0] = 8; pos[12][1] = 5;
 
-    BOARD* board = prepare_board(10, 10, pos, point_alive);
+
+    pos[0][0] = 2; pos[0][1] = 1;
+    pos[1][0] = 5-2; pos[1][1] = 3-2;
+    pos[2][0] = 5-2; pos[2][1] = 4-2;
+    pos[3][0] = 5-2; pos[3][1] = 5-2;
+    pos[4][0] = 5-2; pos[4][1] = 6-2;
+    pos[5][0] = 5-2; pos[5][1] = 7-2;
+    pos[6][0] = 5-2; pos[6][1] = 8-2;
+    pos[7][0] = 4-2; pos[7][1] = 5-2;
+    pos[8][0] = 3-2; pos[8][1] = 5-2;
+    pos[9][0] = 1; pos[9][1] = 2;
+    pos[10][0] = 6-2; pos[10][1] = 5-2;
+    pos[11][0] = 7-2; pos[11][1] = 5-2;
+    pos[12][0] = 1; pos[12][1] = 1;
+
+    BOARD* board;
 
     // Clipped
     if (game_type == 1) {
+        board = prepare_board(10, 10, pos, point_alive);
         start_game_clipped(board);
     } else if (game_type == 2) {
         // start circular game
+        board = prepare_board_circular(10, 10, pos, point_alive);
+        start_game_circular(board);
     }
 
     free_board(board);
-
     return 0;
 }
 
