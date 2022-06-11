@@ -1,12 +1,5 @@
 #include "includes/game_circular.h"
 
-BOARD* prepare_board_circular(int rows, int cols, int** pos, int points_alive){
-    BOARD* board = initialize_board(rows, cols);
-    fill_board_borders(board);
-    fill_board(board, pos, points_alive);
-    return board;
-}
-
 
 void perform_step_circular(BOARD* board) {
     BOARD* tmp_board = initialize_board(board->rows-2, board->cols-2);  // -2 for border
@@ -87,17 +80,4 @@ void perform_step_circular(BOARD* board) {
     copy_board(tmp_board, board);
     free_board(tmp_board);
 }
-
-
-
-void start_game_circular(BOARD* board) {
-    while(1) {
-        system("clear");
-        draw_board(*board);
-
-        perform_step_circular(board);
-        sleep(1);
-    }
-}
-
 

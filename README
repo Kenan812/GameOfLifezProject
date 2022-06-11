@@ -4,6 +4,10 @@ Project for Development Technics by
     Javid Majidzade
 
 
+    ALL LIBRARIES VERSIONS ARE SUITABLE FOR UBUNTU 20.04
+
+///  DESCRIPTION
+
 Main action of the game will be done on board. The board is represented as a structure with the 
 number of rows, columns and the actual board itself. There will be 2 additional rows and columns 
 to indicate the border in order to not check the border manually inside the program. The board is 
@@ -15,7 +19,30 @@ to indicate the border in order to not check the border manually inside the prog
 
 
 2 versions of the game are be available: clipped and circular. 
+    Clipped:   board borders are bounded 
+    Circular:  board borders are continuous (not bounded) 
 
+
+///  PROGRAM EXECUTION
+
+To be able to execute the program latest versoins of cmake and sdl2 libraries must be installed.
+
+It is highly recommended to execute the program by following this steps:
+    1) create 'build' folder in main directory
+    2) change directory to 'build'
+    3) run command 'cmake ../'
+    4) run command 'make'
+    5) execute program using './game'
+
+
+///  UNIT tests
+
+For unit testing CUNIT library (libcunit1) was used.
+
+To chech if all tests pass do the following: 
+    1) redirect to 'tests' directory
+    2) run command 'gcc test.c -lcunit -o test'
+    3) run command './test'
 
 
 
