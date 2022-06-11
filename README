@@ -23,6 +23,18 @@ to indicate the border in order to not check the border manually inside the prog
     Circular:  board borders are continuous (not bounded) 
 
 
+///  PROGRAM EXECUTION
+
+To be able to execute the program latest versoins of cmake and sdl2 libraries must be installed.
+
+It is highly recommended to execute the program by following this steps:
+    1) create 'build' folder in main directory
+    2) change directory to 'build'
+    3) run command 'cmake ../'
+    4) run command 'make'
+    5) execute program using './game'
+
+
 ///  UNIT tests
 
 For unit testing CUNIT library (libcunit1) was used.
