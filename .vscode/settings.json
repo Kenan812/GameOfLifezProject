@@ -3,6 +3,11 @@
         "board.h": "c",
         "game_clipped.h": "c",
         "board_drawer.h": "c",
-        "game_circular.h": "c"
+        "game_circular.h": "c",
+        "unistd.h": "c",
+        "string.h": "c",
+        "stdio.h": "c",
+        "stdlib.h": "c",
+        "time.h": "c"
     }
 }

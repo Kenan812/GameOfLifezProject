@@ -67,8 +67,8 @@ void copy_board(BOARD* source, BOARD* dest) {
 
 
 void free_board(BOARD* board) {
-    for (int i = 0; i < board->rows; i++) 
-        free(board->board_content[i]);
+    // for (int i = 0; i < board->rows; i++) 
+    //     free(board->board_content[i]);
     free(board);
 }
 
