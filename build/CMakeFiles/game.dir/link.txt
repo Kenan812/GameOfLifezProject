@@ -1,0 +1,1 @@
+/usr/bin/cc    CMakeFiles/game.dir/main.c.o CMakeFiles/game.dir/draw_animation_library/board_drawer.c.o  -o game  -lSDL2 game_library/libgame_library.a draw_animation_library/libdraw_animation_library.a 

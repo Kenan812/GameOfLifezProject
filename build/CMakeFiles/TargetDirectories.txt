@@ -1,0 +1,10 @@
+/home/user/Documents/DevTechnics/GameOfLifezProject/build/CMakeFiles/rebuild_cache.dir
+/home/user/Documents/DevTechnics/GameOfLifezProject/build/CMakeFiles/edit_cache.dir
+/home/user/Documents/DevTechnics/GameOfLifezProject/build/CMakeFiles/game.dir
+/home/user/Documents/DevTechnics/GameOfLifezProject/build/CMakeFiles/doc.dir
+/home/user/Documents/DevTechnics/GameOfLifezProject/build/game_library/CMakeFiles/edit_cache.dir
+/home/user/Documents/DevTechnics/GameOfLifezProject/build/game_library/CMakeFiles/rebuild_cache.dir
+/home/user/Documents/DevTechnics/GameOfLifezProject/build/game_library/CMakeFiles/game_library.dir
+/home/user/Documents/DevTechnics/GameOfLifezProject/build/draw_animation_library/CMakeFiles/rebuild_cache.dir
+/home/user/Documents/DevTechnics/GameOfLifezProject/build/draw_animation_library/CMakeFiles/edit_cache.dir
+/home/user/Documents/DevTechnics/GameOfLifezProject/build/draw_animation_library/CMakeFiles/draw_animation_library.dir
