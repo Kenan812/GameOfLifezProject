@@ -14,22 +14,16 @@
 // Prepare board for the game
 //      Initialize board, fill borders
 // Parameters: 
-//      rows: number of rows
-//      cols: number of cols
+//      rows:             number of rows
+//      cols:             number of cols
+//      pos:              positions of initially alive pixels
+//      points_alive:     initial number of alive pixels
 // Return: pointer to created board
 BOARD* prepare_board_circular(int rows, int cols, int** pos, int points_alive);
 
 
 // Performs step of the game by modifying the board
 // Parameters: 
-//      rows: number of rows
+//      board: border of the game
 void perform_step_circular(BOARD* board);
-
-
-// Starts game of life
-// Parameters: 
-//      rows: number of rows
-void start_game_circular(BOARD* board);
-
-
 

@@ -12,4 +12,9 @@
 #define WHITE "\x1b[1;0m"
 #define BLUE "\x1b[1;34m"
 
+
+// Draws board in console
+// Parameters: 
+//      Board: board of the game
 void draw_board(BOARD board);
+

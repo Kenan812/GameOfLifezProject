@@ -10,4 +10,5 @@ void draw_board(BOARD board) {
         printf("\n");
     }
 }
+
  
