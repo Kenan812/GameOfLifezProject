@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/user/Documents/DevTechnics/GameOfLifezProject/draw_animation_library/board_drawer.c
+includes/board_drawer.h
+/home/user/Documents/DevTechnics/GameOfLifezProject/draw_animation_library/includes/board_drawer.h
+
+/home/user/Documents/DevTechnics/GameOfLifezProject/draw_animation_library/includes/board_drawer.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+time.h
+-
+unistd.h
+-
+../../game_library/includes/board.h
+/home/user/Documents/DevTechnics/GameOfLifezProject/game_library/includes/board.h
+
+/home/user/Documents/DevTechnics/GameOfLifezProject/game_library/includes/board.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+

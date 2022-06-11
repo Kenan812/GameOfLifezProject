@@ -1,0 +1,2 @@
+/usr/bin/ar qc libdraw_animation_library.a  CMakeFiles/draw_animation_library.dir/board_drawer.c.o
+/usr/bin/ranlib libdraw_animation_library.a

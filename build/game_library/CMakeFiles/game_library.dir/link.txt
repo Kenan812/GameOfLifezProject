@@ -1,0 +1,2 @@
+/usr/bin/ar qc libgame_library.a  CMakeFiles/game_library.dir/board.c.o CMakeFiles/game_library.dir/game_clipped.c.o CMakeFiles/game_library.dir/game_circular.c.o
+/usr/bin/ranlib libgame_library.a
